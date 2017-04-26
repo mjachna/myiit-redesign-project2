@@ -46,7 +46,7 @@ $.noConflict();
       });   
   
       // Handle page navigation/reload.
-      $('#transcript-link, #home-btn, #new-term-btn, #logoutBtn').on('click', function() {
+      $('#transcript-link, #home-btn, #new-term-btn, #logoutBtn, #reg-link, #carserv-link').on('click', function() {
         var id = this.id;
         switch(id) {
         case 'transcript-link' :
@@ -60,7 +60,13 @@ $.noConflict();
           break;
         case 'logoutBtn' :
           document.location.href = '../index.html';
-          break;         
+          break;
+        case 'reg-link' :
+          document.location.href = '../test-page/reg.html';
+          break;
+        case 'carserv-link' :
+          document.location.href = '../test-page/car-serv.html';
+          break;		  
         }
       });
       
